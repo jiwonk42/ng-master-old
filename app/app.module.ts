@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { VideosComponent } from './videos/videos.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VideosComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
