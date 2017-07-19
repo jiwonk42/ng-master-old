@@ -1,1 +1,16 @@
+nav.navbar {
+  background-color: orange;
+}
 
+nav a:link {
+  text-decoration: none;
+}
+
+nav a.navbar-brand {
+  margin-left: 20px;
+}
+
+ul.nav.navbar-nav {
+  float: right;
+  margin-right: 10px;
+}
