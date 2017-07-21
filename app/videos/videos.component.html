@@ -3,6 +3,11 @@
 
 Sed tristique non ex sed maximus. Curabitur congue ante in risus rutrum, sit amet venenatis sapien dignissim. Curabitur sit amet mattis nisi. Sed eget elit rhoncus, malesuada diam id, pulvinar ex. Suspendisse feugiat, sapien ut eleifend feugiat, velit lorem dictum odio, sed suscipit odio ligula vitae felis. In in quam tempor, bibendum nibh quis, egestas augue. Nam rhoncus, velit molestie posuere posuere, libero felis venenatis lorem, vel laoreet diam libero ac tortor. Duis nec mi scelerisque, commodo neque ac, ultricies risus. Nulla facilisi.
 
-Nulla aliquet ante mauris, et auctor arcu consectetur sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla tortor purus, accumsan at ultricies eu, euismod eu quam. Vestibulum ultrices et erat ut consequat. Donec sed feugiat eros. Morbi sed enim nisi. Nunc eget enim nec diam mollis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat eget lacus id lacinia. Donec ac egestas orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Donec a dolor vel enim porttitor sodales id eu neque. Phasellus et lorem magna.
-  <button (click)="doLogin($event)">Authorize</button>
+
+  <form [formGroup]="searchForm">
+    <label for="search">Search YouTube</label><br />
+    <!--<input ngControl="search" id="search" />-->
+    <input name="search" formControlName="search">
+  </form>
+
 </div>
