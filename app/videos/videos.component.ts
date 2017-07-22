@@ -16,24 +16,20 @@ export class VideosComponent {
   //searchForm: any;
   searchForm: FormGroup;
   search = new FormControl ("", Validators.required);
-  results$: any;
+  results$: Observable<any>;
 
   constructor(private router: Router, private _formBuilder: FormBuilder, private _http: Http) {
     const API_URL = 'https://www.googleapis.com/youtube/v3/search';
     // get a key at https://console.developers.google.com/apis/api/youtube
-    const API_KEY = 'AIzaSyABuOWB8fp2wNBpNPHZCqeJtSo637MM5V8';
+    const API_KEY = 'AIzaSyAKz8w8JdGjXWeIrJKcreV10f-UENDHncY';
 
     this.searchForm = this._formBuilder.group({
       'search': ['', Validators.required]
     });
 
-    this.results$ = this.searchForm.valueChanges.subscribe(value => console.log(value));
-    /*this.results$ = this.searchForm.controls.search.valueChanges // <- Observable Form
-      .subscribe(value => console.log(value));*/
-
-      /*.switchMap(query => this._http.get(`${API_URL}?q=${query}&key=${API_KEY}&part=snippet`))  // <-- Observable Http
-      .map(res => res.json())
-      .map(res => res.items);
-    console.log(this.results$);*/
+    this.results$ = this.searchForm.controls.search.valueChanges
+    .switchMap(query => this._http.get(`${API_URL}?q=${query}&key=${API_KEY}&part=snippet`))  // <-- Observable Http
+    .map(res => res.json())
+    .map(res => res.items);
   }
 }
