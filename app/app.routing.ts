@@ -9,7 +9,7 @@ const appRoutes: Routes = [
     component: BooksComponent
   },
   {
-     path: 'video',
+     path: 'videos',
      component: VideosComponent
    }
  ];

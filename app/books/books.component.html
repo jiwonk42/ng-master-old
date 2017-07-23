@@ -1,3 +1,7 @@
-<p>
-  books works!
-</p>
+<h2>Bookstore</h2>
+
+<div *ngFor="let book of books" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{book.title}}</em> by {{book.author}}</h3>
+  </div>
+</div>
