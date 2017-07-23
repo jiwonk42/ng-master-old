@@ -8,13 +8,15 @@ import { VideosComponent } from './videos/videos.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VideosComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
