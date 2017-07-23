@@ -20,4 +20,7 @@ export class BooksComponent {
     new Book("Pro Angular (2017)", "Adam Freeman", 32, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8sRSq4zAIjj4P-7Z36zHtsLe6E3JZ8ijSxO3MftkO8yjBv97HWdUK0wOTLzFAcHe-CX7d", "Get the most from Angular 2, the leading framework for building dynamic JavaScript applications. Best-selling author Adam Freeman begins by describing the MVC pattern and the benefits it can offer and then shows you how to use Angular in your projects, starting from the nuts-and-bolts and building up to the most advanced and sophisticated features, going in-depth to give you the knowledge you need.", 3)
   ];
 
+  goToDetailPage(clickedBook: Book) {
+    this.router.navigate(['books', clickedBook.id]);
+  };
 }

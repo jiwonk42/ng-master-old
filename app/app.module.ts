@@ -9,6 +9,7 @@ import { routing } from './app.routing';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BooksComponent } from './books/books.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BooksComponent } from './books/books.component';
     VideosComponent,
     HeaderComponent,
     SidebarComponent,
-    BooksComponent
+    BooksComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,
