@@ -1,0 +1,18 @@
+<h4>Edit Book</h4>
+
+<label>New Book Title:</label>
+<input [(ngModel)]="selectedBook.title">
+
+<label>New Book Author:</label>
+<input [(ngModel)]="selectedBook.author">
+
+<label>New Book Price:</label>
+<input [(ngModel)]="selectedBook.price">
+
+<label>New Book Image:</label>
+<input [(ngModel)]="selectedBook.image">
+
+<label>New Book Description:</label>
+<input [(ngModel)]="selectedBook.description">
+
+<button (click)="beginUpdatingBook(selectedBook)">Update</button>

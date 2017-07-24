@@ -1,7 +1,12 @@
 <h2>Bookstore</h2>
 
-<div *ngFor="let book of books | async" (click)="goToDetailPage(book)" class="panel panel-default">
+<div *ngFor="let book of books | async"  class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{book.title}}</em> by {{book.author}}</h3>
+    <h3 (click)="goToDetailPage(book)"><em>{{book.title}}</em> by {{book.author}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{book.description}}
+      <hr>
+      <app-edit-book [selectedBook]="book"></app-edit-book>
+    </div>
   </div>
 </div>
