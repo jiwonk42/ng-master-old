@@ -19,11 +19,7 @@ export class BookService {
     this.books.push(newBook);
   }
 
-  getBookById(bookId: number) {
-    /*for (var i = 0; i <= BOOKS.length -1; i++) {
-      if (BOOKS[i].id === bookId) {
-        return BOOKS[i];
-      }
-    }*/
+  getBookById(bookId: string) {
+    return this.database.object('books/' + bookId);
   }
 }

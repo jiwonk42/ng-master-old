@@ -19,7 +19,7 @@ export class BooksComponent implements OnInit {
     this.books = this.bookService.getBooks();
   }
 
-  goToDetailPage(clickedBook: Book) {
-    //this.router.navigate(['books', clickedBook.id]);
+  goToDetailPage(clickedBook) {
+    this.router.navigate(['books', clickedBook.$key]);
   }
 }

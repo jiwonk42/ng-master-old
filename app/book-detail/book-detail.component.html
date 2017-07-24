@@ -1,8 +1,10 @@
-<!--<div>
-  <h3>{{bookToDisplay.title}}</h3>
-  <h4>{{bookToDisplay.author}}</h4>
-  <p>{{bookToDisplay.description}}</p>
-</div>-->
+<div>
+  <h3>{{(bookToDisplay | async)?.title}}</h3>
+  <h4>{{(bookToDisplay | async)?.author}}</h4>
+  <h4>{{(bookToDisplay | async)?.price}}</h4>
+  <img src="{{(bookToDisplay | async)?.image}}" alt="Book image"/>
+  <p>{{(bookToDisplay | async)?.description}}</p>
+</div>
 
 <div>
   <h3>Details</h3>
