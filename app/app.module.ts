@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormBuilder, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
-//import { YTApiModule } from 'ngx-youtube';
 import { AppComponent } from './app.component';
 import { VideosComponent } from './videos/videos.component';
 import { routing } from './app.routing';
@@ -15,6 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +32,8 @@ export const firebaseConfig = {
     BooksComponent,
     BookDetailComponent,
     AdminComponent,
-    EditBookComponent
+    EditBookComponent,
+    AngularFireAuthModule
   ],
   imports: [
     BrowserModule,
