@@ -27,4 +27,10 @@ export class BookService {
     var bookEntryInFirebase = this.getBookById(localUpdatedBook.$key);
     bookEntryInFirebase.update({title: localUpdatedBook.title, author: localUpdatedBook.author, price: localUpdatedBook.price, image: localUpdatedBook.image, description: localUpdatedBook.description});
   }
+
+  deleteBook(localBookToDelete) {
+    var bookEntryInFirebase = this.getBookById(localBookToDelete.$key);
+    bookEntryInFirebase.remove();
+
+  }
 }

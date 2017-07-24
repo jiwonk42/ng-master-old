@@ -14,9 +14,15 @@ export class EditBookComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   beginUpdatingBook(bookToUpdate) {
     this.bookService.updateBook(bookToUpdate);
+  }
+
+  beginDeletingBook(bookToDelete) {
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.bookService.deleteBook(bookToDelete);
+    }
   }
 
 }
