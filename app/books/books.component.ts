@@ -20,6 +20,6 @@ export class BooksComponent implements OnInit {
   }
 
   goToDetailPage(clickedBook: Book) {
-    this.router.navigate(['books', clickedBook.id]);
+    //this.router.navigate(['books', clickedBook.id]);
   }
 }

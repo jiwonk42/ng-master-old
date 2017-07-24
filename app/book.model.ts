@@ -1,4 +1,4 @@
 export class Book {
   constructor (public title: string, public author: string,
-   public price: number, public image: string, public description: string, public id: number) {}
+   public price: number, public image: string, public description: string) {}
 }

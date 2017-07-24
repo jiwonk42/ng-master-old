@@ -22,7 +22,7 @@ export class BookDetailComponent implements OnInit {
      this.bookId = parseInt(urlParameters['id']);
    });
 
-   this.bookToDisplay = this.bookService.getBookById(this.bookId);
+   //this.bookToDisplay = this.bookService.getBookById(this.bookId);
   }
 
 }
