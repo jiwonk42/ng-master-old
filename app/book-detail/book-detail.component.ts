@@ -13,7 +13,7 @@ import { BookService } from '../book.service';
 export class BookDetailComponent implements OnInit {
 
   bookId: number;
-  bookToDisplay: Book;
+  //bookToDisplay: Book;
 
   constructor(private route: ActivatedRoute, private location: Location, private bookService: BookService) { }
 

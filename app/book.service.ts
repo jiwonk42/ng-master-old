@@ -15,6 +15,10 @@ export class BookService {
     return this.books;
   }
 
+  addBook(newBook: Book) {
+    this.books.push(newBook);
+  }
+
   getBookById(bookId: number) {
     /*for (var i = 0; i <= BOOKS.length -1; i++) {
       if (BOOKS[i].id === bookId) {
