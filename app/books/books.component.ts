@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Book } from '../book.model';
 import { Router } from '@angular/router';
 import { BookService } from '../book.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-books',
@@ -9,8 +10,8 @@ import { BookService } from '../book.service';
   styleUrls: ['./books.component.css'],
   providers: [BookService]
 })
-export class BooksComponent implements OnInit{
-  books: Book[];
+export class BooksComponent implements OnInit {
+  books: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private bookService: BookService) { }
 
