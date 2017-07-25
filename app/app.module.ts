@@ -5,8 +5,6 @@ import { FormBuilder, Validators, FormsModule, ReactiveFormsModule } from '@angu
 import { AppComponent } from './app.component';
 import { VideosComponent } from './videos/videos.component';
 import { routing } from './app.routing';
-import { HeaderComponent } from './header/header.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { BooksComponent } from './books/books.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { masterFirebaseConfig } from './api-keys';
@@ -31,8 +29,6 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     VideosComponent,
-    HeaderComponent,
-    SidebarComponent,
     BooksComponent,
     BookDetailComponent,
     AdminComponent,
