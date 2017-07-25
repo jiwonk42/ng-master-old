@@ -17,6 +17,7 @@ import { EditBookComponent } from './edit-book/edit-book.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { PublicComponent } from './public/public.component';
 import { PrivateComponent } from './private/private.component';
+import { AuthGuard } from './auth-guard.service';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -49,7 +50,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
