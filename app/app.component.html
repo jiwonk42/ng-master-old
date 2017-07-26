@@ -18,7 +18,9 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li *ngIf="isLoggedIn">
-          <a>{{userName}}</a>
+          <a>Hello, {{userName}}!</a>    
+        </li>
+        <li *ngIf="isLoggedIn">
           <a (click)="logout()">Log out</a>
         </li>
         <li *ngIf ="!isLoggedIn">

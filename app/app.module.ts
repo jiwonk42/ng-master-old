@@ -14,7 +14,6 @@ import { AdminComponent } from './admin/admin.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import { HomeComponent } from './home/home.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { PublicComponent } from './public/public.component';
 import { AuthGuard } from './auth-guard.service';
 import { AuthenticationService } from './authentication.service';
 
