@@ -11,14 +11,14 @@ import { AuthenticationService } from './authentication.service';
 })
 export class AppComponent {
   user;
-  private isLoggedIn: Boolean;
-  private userName: String;
+  private isLoggedIn: boolean;
+  private userName: string;
 
   constructor(public authService: AuthenticationService, private router: Router) {
     this.authService.user.subscribe(user => {
       if (user == null) {
         this.isLoggedIn = false;
-        this.router.navigate(['public']);
+        this.router.navigate(['home']);
       } else {
         this.isLoggedIn = true;
         this.userName = user.displayName;

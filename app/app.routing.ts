@@ -24,9 +24,9 @@ const appRoutes: Routes = [
     component: BookDetailComponent
   },
   {
-     path: 'videos',
-     component: VideosComponent
-   }
+    path: 'videos',
+    component: VideosComponent
+  }
  ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
