@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   fullImagePath3: string;
 
   constructor() {
-    this.fullImagePath1 = '/assets/images/gummy.jpg';
+    this.fullImagePath1 = '/assets/images/homepage.jpeg';
     this.fullImagePath2 = '/assets/images/gummy2.jpg';
     this.fullImagePath3 = '/assets/images/gummy3.jpg';
   }
