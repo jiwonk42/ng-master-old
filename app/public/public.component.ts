@@ -7,14 +7,11 @@ import * as firebase from "firebase";
   styleUrls: ['./public.component.css']
 })
 export class PublicComponent {
-
   private user;
 
   constructor() {}
 
   ngDoCheck() {
     this.user = firebase.auth().currentUser;
-    console.log(this.user);
   }
-
 }

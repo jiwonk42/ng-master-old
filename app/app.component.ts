@@ -7,7 +7,7 @@ import { AuthenticationService } from './authentication.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [ AuthenticationService ]
+  providers: [AuthenticationService]
 })
 export class AppComponent {
   user;
@@ -34,5 +34,4 @@ export class AppComponent {
   logout() {
     this.authService.logout();
   }
-
 }

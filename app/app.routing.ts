@@ -4,8 +4,13 @@ import { VideosComponent } from './videos/videos.component';
 import { BooksComponent } from './books/books.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
   {
     path: 'admin',
     component: AdminComponent
