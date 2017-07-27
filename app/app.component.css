@@ -2,3 +2,38 @@ div.body {
   padding: 40px 25px;
   margin-top: 55px;
 }
+
+div#navbar.collapse.navbar-collapse {
+  min-height: 65px;
+  margin-top: 13px;
+}
+
+nav {
+  background-color: #2B7CD0;
+}
+
+nav ul li a, .navbar-brand {
+  color: white;
+}
+
+nav ul li a {
+  font-size: 15px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+/* Material Icon Centered in the Middle */
+.vertical-align-middle {
+    vertical-align: middle;
+}
+.padding-bottom-3 {
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
+
+div.gsc-control-cse .gsc-control-cse-en {
+  border-radius: 5px;
+}

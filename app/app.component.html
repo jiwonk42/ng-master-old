@@ -11,21 +11,21 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a routerLink="/documents">Documents</a></li>
-        <li><a routerLink="/books">Books</a></li>
-        <li><a routerLink="/videos">Video Tutorial</a></li>
-        <li *ngIf="isLoggedIn"><a routerLink="/admin">Admin</a></li>
+        <li><a routerLink="/documents">DOCUMENTS</a></li>
+        <li><a routerLink="/books">BOOKS</a></li>
+        <li><a routerLink="/videos">VIDEOS</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="/admin">ADMIN</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <div role="search" style="margin-top:-5px;margin-left:-5px;width:250px;float:left" [innerHTML]="gcsesearch"></div>
         <li *ngIf="isLoggedIn" style="float:left">
-          <a><i class="material-icons">face</i>{{userName}}</a>
+          <a><i class="material-icons vertical-align-middle padding-bottom-3">face</i>{{userName}}</a>
         </li>
         <li *ngIf="isLoggedIn" style="float:right">
-          <a (click)="logout()">Log out</a>
+          <a (click)="logout()">LOG OUT</a>
         </li>
         <li *ngIf ="!isLoggedIn" style="float:right">
-          <a (click)="login()">Log in</a>
+          <a (click)="login()">LOG IN</a>
         </li>
       </ul>
     </div><!--/.nav-collapse -->
