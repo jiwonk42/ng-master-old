@@ -17,6 +17,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthGuard } from './auth-guard.service';
 import { AuthenticationService } from './authentication.service';
 import { DocumentsComponent } from './documents/documents.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -35,7 +36,8 @@ export const firebaseConfig = {
     BookDetailComponent,
     AdminComponent,
     EditBookComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
