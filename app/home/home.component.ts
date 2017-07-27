@@ -12,8 +12,8 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.fullImagePath1 = '/assets/images/homepage.jpeg';
-    this.fullImagePath2 = '/assets/images/gummy2.jpg';
-    this.fullImagePath3 = '/assets/images/gummy3.jpg';
+    this.fullImagePath2 = '/assets/images/angular-cli.jpg';
+    this.fullImagePath3 = '/assets/images/typescript.png';
   }
 
   ngOnInit() {
