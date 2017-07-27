@@ -17,14 +17,14 @@
         <li *ngIf="isLoggedIn"><a routerLink="/admin">Admin</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <div role="search" style="margin-top:-5px;margin-right:5px;width:250px;float:left" [innerHTML]="gcsesearch"></div>
+        <div role="search" style="margin-top:-5px;margin-left:-5px;width:250px;float:left" [innerHTML]="gcsesearch"></div>
         <li *ngIf="isLoggedIn" style="float:left">
           <a><i class="material-icons">face</i>{{userName}}</a>
         </li>
-        <li *ngIf="isLoggedIn" style="float:left">
+        <li *ngIf="isLoggedIn" style="float:right">
           <a (click)="logout()">Log out</a>
         </li>
-        <li *ngIf ="!isLoggedIn" style="float:left">
+        <li *ngIf ="!isLoggedIn" style="float:right">
           <a (click)="login()">Log in</a>
         </li>
       </ul>

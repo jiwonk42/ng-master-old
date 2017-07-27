@@ -32,4 +32,10 @@ export class VideosComponent {
     .map(res => res.json())
     .map(res => res.items);
   }
+
+  showContents() {
+    if (this.searchForm.controls.search.value === "") {
+      return true;
+    }
+  }
 }

@@ -1,21 +1,25 @@
 <div class="videos container" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "history": false }'>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis mauris lorem, ac ultricies elit blandit eu. Duis ac est fringilla, condimentum nibh nec, congue arcu. Ut eleifend, quam vitae vulputate congue, nisi lectus semper arcu, nec blandit turpis turpis nec quam. Nam et augue non mi feugiat tempus vulputate vitae odio. Integer sit amet arcu sed augue posuere facilisis. Proin vel nisl eros. Fusce justo odio, consectetur tempus purus quis, pretium condimentum urna. Pellentesque risus libero, scelerisque ac ipsum eget, dapibus pretium leo. Donec ornare risus at suscipit semper. Nullam egestas, enim eget sodales molestie, eros enim malesuada nibh, sit amet dapibus urna magna in felis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-Sed tristique non ex sed maximus. Curabitur congue ante in risus rutrum, sit amet venenatis sapien dignissim. Curabitur sit amet mattis nisi. Sed eget elit rhoncus, malesuada diam id, pulvinar ex. Suspendisse feugiat, sapien ut eleifend feugiat, velit lorem dictum odio, sed suscipit odio ligula vitae felis. In in quam tempor, bibendum nibh quis, egestas augue. Nam rhoncus, velit molestie posuere posuere, libero felis venenatis lorem, vel laoreet diam libero ac tortor. Duis nec mi scelerisque, commodo neque ac, ultricies risus. Nulla facilisi.
-Suspendisse feugiat, sapien ut eleifend feugiat, velit lorem dictum odio, sed suscipit odio ligula vitae felis. In in quam tempor, bibendum nibh quis, egestas augue. Nam rhoncus, velit molestie posuere posuere, libero felis venenatis lorem, vel laoreet diam libero ac tortor. Duis nec mi scelerisque, commodo neque ac, ultricies risus. Nulla facilisi.
-Suspendisse feugiat, sapien ut eleifend feugiat, velit lorem dictum odio, sed suscipit odio ligula vitae felis. In in quam tempor, bibendum nibh quis, egestas augue. Nam rhoncus, velit molestie posuere posuere, libero felis venenatis lorem, vel laoreet diam libero ac tortor. Duis nec mi scelerisque, commodo neque ac, ultricies risus. Nulla facilisi.
-
   <form [formGroup]="searchForm">
     <label for="search">Search YouTube</label><br />
     <!--<input ngControl="search" id="search" />-->
     <input name="search" formControlName="search" id="search">
   </form>
 
-  <div *ngFor="let result of results$ | async"> <!-- Observable templates/pipes -->
-    <a href="https://www.youtube.com/watch?v={{result.id.videoId}}" target="_blank">
-      <h3>{{result.snippet.title}}</h3>
-    </a>
-    <p>{{result.snippet.description}}</p>
-    <img [src]="result.snippet.thumbnails.default.url" style="width: 100%; max-width: 250px;" />
+  <div *ngIf="showContents()">
+    <iframe style="width:45%;height:315px;padding:5px" src="https://www.youtube.com/embed/-zW1zHqsdyc" frameborder="0" allowfullscreen></iframe>
+    <iframe style="width:45%;height:315px;padding:5px" src="https://www.youtube.com/embed/_-CD_5YhJTA" frameborder="0" allowfullscreen></iframe>
+    <iframe style="width:45%;height:315px;padding:5px" src="https://www.youtube.com/embed/WWQZCDegWHg?list=PL6n9fhu94yhWqGD8BuKuX-VTKqlNBj-m6" frameborder="0" allowfullscreen></iframe>
+    <iframe style="width:45%;height:315px;padding:5px" src="https://www.youtube.com/embed/zj7_4VDFQPA?list=PLC3y8-rFHvwg5gEu2KF4sbGvpUqMRSBSW" frameborder="0" allowfullscreen></iframe>
+    <iframe style="width:45%;height:315px;padding:5px" src="https://www.youtube.com/embed/m5fHtGtyPgk?list=PLillGF-RfqbYftYr5T6bv9idBU7oyADoZ" frameborder="0" allowfullscreen></iframe>
+    <iframe style="width:45%;height:315px;padding:5px" src="https://www.youtube.com/embed/hEBP9x6FNMk" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div *ngIf="!showContents()">
+    <div *ngFor="let result of results$ | async"> <!-- Observable templates/pipes -->
+      <a href="https://www.youtube.com/watch?v={{result.id.videoId}}" target="_blank">
+        <h3>{{result.snippet.title}}</h3>
+        <img [src]="result.snippet.thumbnails.default.url" style="width: 100%; max-width: 250px;" />
+      </a>
+      <p>{{result.snippet.description}}</p>
+    </div>
   </div>
 </div>
