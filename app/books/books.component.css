@@ -1,6 +1,14 @@
-div.col-md-3 {
+div.book-column {
   background-color: pink;
   border: 1px solid black;
   min-height: 500px;
   text-align: center;
+}
+
+.version-filter {
+  margin-top: 25px;
+}
+
+div.book-list {
+  padding-top: 30px;
 }
