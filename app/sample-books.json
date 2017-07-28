@@ -1,24 +1,30 @@
 {"books": [{
-  "title": "Ng-Book 2: The Complete Book on Angular 2 (2016)",
+  "title": "Ng-Book 2: The Complete Book on Angular 2",
   "author": "Ari Lerner, Felipe Coury, and Nate Murray",
+  "year": 2016,
   "price": 55,
   "image": "https://prodimage.images-bn.com/pimages/9780991344611_p0_v1_s192x300.jpg",
+  "version": "AngularJS",
   "description": "ng-book 2. The in-depth, complete, and up-to-date book on Angular 2. Become an Angular 2 expert today.",
   "id": "1"
 },
 {
-  "title": "Angular 2 Development with TypeScript (2016)",
+  "title": "Angular 2 Development with TypeScript",
   "author": "Anton Moiseev and Yakov Fain",
+  "year": 2016,
   "price": 36,
   "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZhqU3evOB2kCcGJJ90rAURTibbPHjAgnL8uLg1H8R0sndAJsintukclAEivQ4UUJEqjWM",
+  "version": "AngularJS",
   "description": "Angular 2 Development with Typescript teaches you what you need to start using Angular, while you also learn TypeScript and how to take advantage of its benefits.",
   "id": "2"
 },
 {
-  "title": "Pro Angular (2017)",
+  "title": "Pro Angular",
   "author": "Adam Freeman",
+  "year": 2017,
   "price": 32,
   "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8sRSq4zAIjj4P-7Z36zHtsLe6E3JZ8ijSxO3MftkO8yjBv97HWdUK0wOTLzFAcHe-CX7d",
+  "version":"AngularJS",
   "description": "Get the most from Angular 2, the leading framework for building dynamic JavaScript applications. Best-selling author Adam Freeman begins by describing the MVC pattern and the benefits it can offer and then shows you how to use Angular in your projects, starting from the nuts-and-bolts and building up to the most advanced and sophisticated features, going in-depth to give you the knowledge you need.",
   "id": "3"
   }]
