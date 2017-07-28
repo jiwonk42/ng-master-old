@@ -20,9 +20,8 @@
           <h4><em>{{book.title}}</em></h4>
           <h5>by {{book.author}}</h5>
         </div>
+        <hr>
         <div *ngIf="currentRoute === '/admin'">
-          {{book.description}}
-          <hr>
           <app-edit-book [selectedBook]="book"></app-edit-book>
         </div>
       </div>

@@ -3,39 +3,58 @@
     <h3>Add New Book to Inventory</h3>
     <div>
       <div>
-        <label>Book Title:</label>
+        <label>Title:</label>
         <br>
         <input #newTitle>
       </div>
 
       <div>
-        <label>Book Author:</label>
+        <label>Author:</label>
         <br>
         <input #newAuthor>
       </div>
 
       <div>
-        <label>Book Price:</label>
+        <label>Publish:</label>
+        <br>
+        <input #newYear>
+      </div>
+
+      <div>
+        <label>Price:</label>
         <br>
         <input #newPrice>
       </div>
 
       <div>
-        <label>Book Image:</label>
+        <label>Version:</label>
+        <br>
+        <input #newVersion>
+      </div>
+
+      <div>
+        <label>Image:</label>
         <br>
         <input #newImage>
       </div>
 
       <div>
-        <label>Book Description:</label>
+        <label>Buy from:</label>
+        <br>
+        <input #newShop>
+      </div>
+
+      <div>
+        <label>Description:</label>
         <br>
         <textarea #newDescription></textarea>
       </div>
 
-      <button (click)="submitForm(newTitle.value, newAuthor.value, newPrice.value, newImage.value, newDescription.value); newTitle.value=''; newAuthor.value=''; newPrice.value=''; newImage.value=''; newDescription.value=''">Add</button>
+      <button (click)="submitForm(newTitle.value, newAuthor.value, newYear.value, newPrice.value, newVersion.value, newImage.value, newShop.value, newDescription.value); newTitle.value=''; newAuthor.value=''; newVersion.value=''; newPrice.value=''; newImage.value=''; newShop.value=''; newDescription.value=''">Add New Book</button>
     </div>
   </div>
 </div>
+<hr>
 <div>
   <app-books></app-books>
 </div>

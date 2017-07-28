@@ -11,6 +11,7 @@
         <h4><span class="book-headers">Price:</span> ${{(bookToDisplay | async)?.price}}</h4>
         <h4><span class="book-headers">Version:</span> {{(bookToDisplay | async)?.version}}</h4>
         <h4><span class="book-headers">Pulished:</span> {{(bookToDisplay | async)?.year}}</h4>
+        <h4><span class="book-headers">Buy from:</span> <a href="{{(bookToDisplay | async)?.shop}}">Other</a></h4>
       </div>
     </div>
     <div class="book-description">
