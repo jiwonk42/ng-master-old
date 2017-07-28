@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3">
-      <h2>Recommendations</h2>
+      <h2>Recommended</h2>
     </div>
     <div class="form-group col-md-3 version-filter">
       <select (change)="onChange($event.target.value)">
@@ -13,10 +13,13 @@
     </div>
   </div>
   <div class="row book-list">
-    <div *ngFor="let book of books | async | version:filterByVersion" class="book-column col-md-3">
+    <div *ngFor="let book of books | async | version:filterByVersion" class="book-column col-md-4">
       <div (click)="goToDetailPage(book)">
-        <h3><em>{{book.title}}</em> by {{book.author}}</h3>
         <img src="{{book.image}}" alt="Book image"/>
+        <div class="title-author">
+          <h4><em>{{book.title}}</em></h4>
+          <h5>by {{book.author}}</h5>
+        </div>
         <div *ngIf="currentRoute === '/admin'">
           {{book.description}}
           <hr>

@@ -1,8 +1,7 @@
 div.book-column {
-  background-color: pink;
-  border: 1px solid black;
-  min-height: 500px;
+  min-height: 350px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .version-filter {
@@ -11,4 +10,13 @@ div.book-column {
 
 div.book-list {
   padding-top: 30px;
+}
+
+img {
+  width: 192px;
+  height: 248px;
+}
+
+div.title-author {
+  margin-top: 20px;
 }
