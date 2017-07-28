@@ -1,6 +1,7 @@
 div.body {
   padding: 40px 25px;
   margin-top: 55px;
+  background-color: #FAFAFA;
 }
 
 div#navbar.collapse.navbar-collapse {
