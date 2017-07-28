@@ -1,5 +1,70 @@
-<h1>Edit Book</h1>
+<div class="edit-book row">
+  <div class="edit-form col">
+    <div class="well bs-component">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Edit Book</legend>
+          <div class="form-group">
+            <label for="input" class="col-lg-2 control-label">Title</label>
+            <div class="col-lg-10">
+              <input [(ngModel)]="selectedBook.title" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="newTitle">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input" class="col-lg-2 control-label">Author</label>
+            <div class="col-lg-10">
+              <input [(ngModel)]="selectedBook.author" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="newAuthor">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input" class="col-lg-2 control-label">Publ.</label>
+            <div class="col-lg-10">
+              <input [(ngModel)]="selectedBook.year" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="newYear">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input" class="col-lg-2 control-label">Price</label>
+            <div class="col-lg-10">
+              <input [(ngModel)]="selectedBook.price" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="newPrice">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input" class="col-lg-2 control-label">Version</label>
+            <div class="col-lg-10">
+              <input [(ngModel)]="selectedBook.version" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="newVersion">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input" class="col-lg-2 control-label">Image</label>
+            <div class="col-lg-10">
+              <input [(ngModel)]="selectedBook.image" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="newImage">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input" class="col-lg-2 control-label">Buy</label>
+            <div class="col-lg-10">
+              <input [(ngModel)]="selectedBook.shop" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="newShop">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">Desc.</label>
+            <div class="col-lg-10">
+              <textarea [(ngModel)]="selectedBook.description" [ngModelOptions]="{standalone: true}" class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button (click)="beginUpdatingBook(selectedBook)" class="btn btn-success">Update</button>
+              <button (click)="beginDeletingBook(selectedBook)" class="btn btn-danger">Delete</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
 
+<!-- Old Form
 <label>New Title:</label>
 <input [(ngModel)]="selectedBook.title">
 <br>
@@ -26,3 +91,4 @@
 <br>
 <button (click)="beginUpdatingBook(selectedBook)">Update</button>
 <button (click)="beginDeletingBook(selectedBook)">Delete</button>
+-->

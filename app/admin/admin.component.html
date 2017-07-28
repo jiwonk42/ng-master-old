@@ -9,56 +9,55 @@
             <div class="form-group">
               <label for="input" class="col-lg-2 control-label">Title</label>
               <div class="col-lg-10">
-                <input #newTitle type="text" class="form-control" id="inputEmail" placeholder="Title">
+                <input #newTitle type="text" class="form-control" id="inputTitle" placeholder="Title">
               </div>
             </div>
             <div class="form-group">
               <label for="input" class="col-lg-2 control-label">Author</label>
               <div class="col-lg-10">
-                <input #newAuthor type="text" class="form-control" id="inputEmail" placeholder="Author">
+                <input #newAuthor type="text" class="form-control" id="inputAuthor" placeholder="Author">
               </div>
             </div>
             <div class="form-group">
               <label for="input" class="col-lg-2 control-label">Published</label>
               <div class="col-lg-10">
-                <input #newYear type="text" class="form-control" id="inputEmail" placeholder="Year">
+                <input #newYear type="text" class="form-control" id="inputYear" placeholder="Year">
               </div>
             </div>
             <div class="form-group">
               <label for="input" class="col-lg-2 control-label">Price</label>
               <div class="col-lg-10">
-                <input #newPrice type="text" class="form-control" id="inputEmail" placeholder="Price">
+                <input #newPrice type="text" class="form-control" id="inputPrice" placeholder="Price">
               </div>
             </div>
             <div class="form-group">
               <label for="input" class="col-lg-2 control-label">Version</label>
               <div class="col-lg-10">
-                <input #newVersion type="text" class="form-control" id="inputEmail" placeholder="Version">
+                <input #newVersion type="text" class="form-control" id="inputVersion" placeholder="Version">
               </div>
             </div>
             <div class="form-group">
               <label for="input" class="col-lg-2 control-label">Image</label>
               <div class="col-lg-10">
-                <input #newImage type="text" class="form-control" id="inputEmail" placeholder="Image">
+                <input #newImage type="text" class="form-control" id="inputImage" placeholder="Image">
               </div>
             </div>
             <div class="form-group">
               <label for="input" class="col-lg-2 control-label">Buy from</label>
               <div class="col-lg-10">
-                <input #newShop type="text" class="form-control" id="inputEmail" placeholder="Shop">
+                <input #newShop type="text" class="form-control" id="inputShop" placeholder="Shop">
               </div>
             </div>
             <div class="form-group">
               <label for="textArea" class="col-lg-2 control-label">Description</label>
               <div class="col-lg-10">
                 <textarea #newDescription class="form-control" rows="3" id="textArea"></textarea>
-                <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
               </div>
             </div>
             <div class="form-group">
               <div class="col-lg-10 col-lg-offset-2">
+                <button (click)="submitForm(newTitle.value, newAuthor.value, newYear.value, newPrice.value, newVersion.value, newImage.value, newShop.value, newDescription.value); newTitle.value=''; newAuthor.value=''; newYear.value=''; newVersion.value=''; newPrice.value=''; newImage.value=''; newShop.value=''; newDescription.value=''" class="btn btn-primary">Add Book</button>
                 <button type="reset" class="btn btn-default">Cancel</button>
-                <button (click)="submitForm(newTitle.value, newAuthor.value, newYear.value, newPrice.value, newVersion.value, newImage.value, newShop.value, newDescription.value); newTitle.value=''; newAuthor.value=''; newYear.value=''; newVersion.value=''; newPrice.value=''; newImage.value=''; newShop.value=''; newDescription.value=''" class="btn btn-primary">Add</button>
               </div>
             </div>
           </fieldset>
@@ -66,8 +65,11 @@
       </div>
     </div>
   </div>
+  <br>
   <hr>
   <div>
+    <h1>Edit or Delete Book</h1>
+    <br>
     <app-books></app-books>
   </div>
 </div>
