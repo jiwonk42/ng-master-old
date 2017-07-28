@@ -1,3 +1,7 @@
+h2 {
+  font-weight: bold;
+}
+
 div.book-column {
   min-height: 350px;
   text-align: center;

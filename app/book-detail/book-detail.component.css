@@ -1,0 +1,29 @@
+div.book-detail h2 {
+  font-weight: bold;
+}
+
+div.book-detail-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h4 {
+  padding-top: 8px;
+}
+
+img {
+  width: 192px;
+  height: 248px;
+}
+
+div.book-description {
+  margin-top: 20px;
+}
+
+span.book-headers {
+  font-weight: bold;
+}
+
+p#description {
+  font-size: 15px;
+}

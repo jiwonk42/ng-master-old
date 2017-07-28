@@ -1,11 +1,22 @@
-<div>
-  <h3>{{(bookToDisplay | async)?.title}}</h3>
-  <h4>{{(bookToDisplay | async)?.author}}</h4>
-  <h4>{{(bookToDisplay | async)?.price}}</h4>
-  <img src="{{(bookToDisplay | async)?.image}}" alt="Book image"/>
-  <p>{{(bookToDisplay | async)?.description}}</p>
-</div>
-
-<div>
-  <h3>Details</h3>
+<div class="container book-detail">
+  <div class="book-detail-inner">
+    <h2>{{(bookToDisplay | async)?.title}}</h2>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{(bookToDisplay | async)?.image}}" alt="Book image"/>
+      </div>
+      <div class="col-md-6">
+        <h4><span class="book-headers">Author:</span> {{(bookToDisplay | async)?.author}}</h4>
+        <h4><span class="book-headers">Price:</span> ${{(bookToDisplay | async)?.price}}</h4>
+        <h4><span class="book-headers">Version:</span> {{(bookToDisplay | async)?.version}}</h4>
+        <h4><span class="book-headers">Pulished:</span> {{(bookToDisplay | async)?.year}}</h4>
+      </div>
+    </div>
+    <div class="book-description">
+      <h4><span class="book-headers">Description:</span></h4>
+      <p id="description">{{(bookToDisplay | async)?.description}}</p>
+    </div>
+    <a routerLink="/books" style="float: right">Go back to list</a>
+  </div>
 </div>

@@ -12,7 +12,6 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
   providers: [ BookService ]
 })
 export class BookDetailComponent implements OnInit {
-
   bookId: string;
   bookToDisplay;
 
@@ -24,6 +23,5 @@ export class BookDetailComponent implements OnInit {
    });
 
    this.bookToDisplay = this.bookService.getBookById(this.bookId);
-  }
-
+ }
 }
