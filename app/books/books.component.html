@@ -1,12 +1,15 @@
 <div class="container">
   <h2>Bookstore</h2>
-  <div *ngFor="let book of books | async"  class="panel panel-default">
-    <div class="panel-body">
-      <h3 (click)="goToDetailPage(book)"><em>{{book.title}}</em> by {{book.author}}</h3>
-      <div *ngIf="currentRoute === '/admin'">
-        {{book.description}}
-        <hr>
-        <app-edit-book [selectedBook]="book"></app-edit-book>
+  <div class="row">
+    <div *ngFor="let book of books | async" class="col-md-3">
+      <div (click)="goToDetailPage(book)">
+        <h3><em>{{book.title}}</em> by {{book.author}}</h3>
+        <img src="{{book.image}}" alt="Book image"/>
+        <div *ngIf="currentRoute === '/admin'">
+          {{book.description}}
+          <hr>
+          <app-edit-book [selectedBook]="book"></app-edit-book>
+        </div>
       </div>
     </div>
   </div>

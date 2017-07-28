@@ -1,0 +1,6 @@
+div.col-md-3 {
+  background-color: pink;
+  border: 1px solid black;
+  min-height: 500px;
+  text-align: center;
+}
