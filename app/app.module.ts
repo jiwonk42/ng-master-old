@@ -17,6 +17,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthGuard } from './auth-guard.service';
 import { AuthenticationService } from './authentication.service';
 import { DocumentsComponent } from './documents/documents.component';
+import { VersionPipe } from './pipes/version.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -35,7 +36,8 @@ export const firebaseConfig = {
     BookDetailComponent,
     AdminComponent,
     EditBookComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    VersionPipe
   ],
   imports: [
     BrowserModule,

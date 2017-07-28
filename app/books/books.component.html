@@ -1,7 +1,15 @@
 <div class="container">
   <h2>Bookstore</h2>
+  <div class="form-group">
+    <select (change)="onChange($event.target.value)">
+      <option value="allVersions" selected="selected">All Versions</option>
+      <option value="angular-js">AngularJS</option>
+      <option value="angular2">Angular 2</option>
+      <option value="angular4">Angular 4</option>
+    </select>
+  </div>
   <div class="row">
-    <div *ngFor="let book of books | async" class="col-md-3">
+    <div *ngFor="let book of books | async | version:filterByVersion" class="col-md-3">
       <div (click)="goToDetailPage(book)">
         <h3><em>{{book.title}}</em> by {{book.author}}</h3>
         <img src="{{book.image}}" alt="Book image"/>

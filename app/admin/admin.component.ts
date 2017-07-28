@@ -26,8 +26,8 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(title: string, author: string, price: number, image: string, description: string) {
-    var newBook: Book = new Book(title, author, price, image, description);
+  submitForm(title: string, author: string, year: number, price: number, image: string, version: string, description: string) {
+    var newBook: Book = new Book(title, author, year, price, image, version, description);
     this.bookService.addBook(newBook);
   }
 

@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class BooksComponent implements OnInit {
   books: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByVersion: string = "allVersions";
 
   constructor(private router: Router, private bookService: BookService) { }
 
@@ -22,5 +23,9 @@ export class BooksComponent implements OnInit {
 
   goToDetailPage(clickedBook) {
     this.router.navigate(['books', clickedBook.$key]);
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByVersion = optionFromMenu;
   }
 }
