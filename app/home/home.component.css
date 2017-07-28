@@ -10,10 +10,21 @@
 }
 
 div.small-section-container {
+  background-color: gray;
   padding: 10px 0px 35px 0px;
 }
 
 div.small-sections {
   padding: 5px 10px;
   margin-top: 10px;
+}
+
+div.paragraph-container {
+  margin-top: 20px;
+  padding: 10px 0px 35px 0px;
+}
+
+img.paragraph-image {
+  padding: 0px 0px 20px 20px;
+  width: 60%;
 }
