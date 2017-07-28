@@ -1,20 +1,28 @@
-<h4>Edit Book</h4>
+<h1>Edit Book</h1>
 
-<label>New Book Title:</label>
+<label>New Title:</label>
 <input [(ngModel)]="selectedBook.title">
-
-<label>New Book Author:</label>
+<br>
+<label>New Author:</label>
 <input [(ngModel)]="selectedBook.author">
-
-<label>New Book Price:</label>
+<br>
+<label>New Publish:</label>
+<input [(ngModel)]="selectedBook.year">
+<br>
+<label>New Price:</label>
 <input [(ngModel)]="selectedBook.price">
-
-<label>New Book Image:</label>
+<br>
+<label>New Version:</label>
+<input [(ngModel)]="selectedBook.version">
+<br>
+<label>New Image:</label>
 <input [(ngModel)]="selectedBook.image">
-
-<label>New Book Description:</label>
+<br>
+<label>New Shop:</label>
+<input [(ngModel)]="selectedBook.shop">
+<br>
+<label>New Description:</label>
 <input [(ngModel)]="selectedBook.description">
-
+<br>
 <button (click)="beginUpdatingBook(selectedBook)">Update</button>
-<hr>
 <button (click)="beginDeletingBook(selectedBook)">Delete</button>
