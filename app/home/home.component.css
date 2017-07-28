@@ -10,8 +10,8 @@
 }
 
 div.small-section-container {
-  background-color: gray;
   padding: 10px 0px 35px 0px;
+  background-color: #b2d8ff;
 }
 
 div.small-sections {
@@ -27,4 +27,19 @@ div.paragraph-container {
 img.paragraph-image {
   padding: 0px 0px 20px 20px;
   width: 60%;
+}
+
+h2 {
+  text-align: center;
+}
+
+img.section-images {
+  padding: 20px;
+  background-color: #b2d8ff;
+  border-radius: 50%;
+}
+
+div.center-images {
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
