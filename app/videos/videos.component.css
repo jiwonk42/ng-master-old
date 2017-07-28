@@ -1,7 +1,20 @@
-.videos.container {
+div.videos.container {
   width: 1000px;
 }
 
-.video-div {
-  background-color: green;
+div.search-youtube {
+  margin: 20px;
+}
+
+div.search-results h4 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+div.video-title {
+  min-height: 45px;
+}
+
+img {
+  margin-bottom: 30px;
 }
