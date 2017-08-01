@@ -4,4 +4,5 @@ export var masterFirebaseConfig = {
   databaseURL: "https://ng-master-64178.firebaseio.com",
   storageBucket: "ng-master-64178.appspot.com",
   messagingSenderId: "345754156070"
-};
+  
+}
