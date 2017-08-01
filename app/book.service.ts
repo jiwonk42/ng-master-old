@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Book } from './book.model';
-import { BOOKS } from './mock-books';
+//import { BOOKS } from './mock-books';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
